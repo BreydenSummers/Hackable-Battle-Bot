@@ -51,7 +51,6 @@ def index():
 
 
 @app.route("/drive/<urlDir>/")
-@auth.login_required
 def drive(urlDir):
     titleText = "Drive the bot"
     if urlDir == "1":

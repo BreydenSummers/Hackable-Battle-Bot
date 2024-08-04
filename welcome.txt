@@ -1,0 +1,7 @@
+Welcome!
+
+To get started with the Flask app for controlling the robot, please remember that you'll need your admin credentials. These are essential for ensuring secure access and operation.
+
+Additionally, there is a service named "flask" that you can start to launch the app. Don't forget that we also have an in-house command-running app available for your convenience. You can use it as an alternative to start the Flask app.
+
+Thank you!
