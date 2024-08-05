@@ -5,11 +5,11 @@
 [Unit]
 Description=Flask App for IoT
 After=network.target
-
+Conflicts=spin.service
 [Service]
 Type=forking
 PIDFile=/var/run/flask.pid
-WorkingDirectory=/home/aggies/tankbotROS-master/nonROS
+WorkingDirectory=/home/aggies/Hackable-Battle-Bot
 ExecStart=/usr/bin/gunicorn --bind 0.0.0.0:80 server:app -p /var/run/flask.pid --daemon
 RestartSec=30s
 Restart=always
