@@ -12,6 +12,6 @@ def stop():
     kit.motor2.throttle = 0
 
 while True:
-    kit.motor1.throttle = 0.5
-    kit.motor2.throttle = -0.5
+    kit.motor1.throttle = 0.75
+    kit.motor2.throttle = -0.75
     signal.signal(signal.SIGTERM, stop)
