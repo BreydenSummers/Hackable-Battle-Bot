@@ -6,7 +6,7 @@ import signal
 kit = MotorKit()
 
 
-#@atexit.register
+@atexit.register
 def stop():
     kit.motor1.throttle = 0
     kit.motor2.throttle = 0
