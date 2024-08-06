@@ -1,7 +1,7 @@
 from adafruit_motorkit import MotorKit
 import atexit
 import signal
-
+import time
 
 kit = MotorKit()
 
@@ -13,5 +13,9 @@ def stop():
 
 while True:
     kit.motor1.throttle = 1.00
-    kit.motor2.throttle = 0.1
+    kit.motor2.throttle = 1.00
+    time.sleep(1) 
+    kit.motor1.throttle = -1.00
+    kit.motor2.throttle = -1.00
+    time.sleep(1) 
     signal.signal(signal.SIGTERM, stop)
